@@ -22,21 +22,21 @@ Der Verein WAK-Lab e.V. nutzt für seinen Webauftritt sowie allen anderen Formen
 
 **Akzentfarbe**
 
-<div style="height:200px; width:200px; background-color:#438F49; border-style:solid"></div>
+![](img/color-green.png)
 
 HEX: `#438F49` RGB: `(67, 143, 73)`
 
 **Basisfarben**
 
-<div style="height:200px; width:200px; background-color:#303030; border-style:solid"></div>
+![](img/color-grey.png)
 
 HEX: `#303030` RGB: `(48, 48, 48)`
 
-<div style="height:200px; width:200px; background-color:#FFFFFF; border-style:solid"></div>
+![](img/color-white.png)
 
 HEX: `#FFFFFF` RGB: `(255, 255, 255)`
 
-<div style="height:200px; width:200px; background-color:#000000; border-style:solid"></div>
+![](img/color-black.png)
 
 HEX: `#000000` RGB: `(0, 0, 0)`
 
