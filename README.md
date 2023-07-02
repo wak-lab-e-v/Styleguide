@@ -10,7 +10,10 @@ Hierbei ist die Schreibweise zu beachten. `WAK` leitet sich vom Kfz-Kennzeichen 
 
 Um den Vereinszweck transparent darzustellen kann der Vereinsname wie folgt erweitert werden (abgetrennt durch einen Bindestrich `-`):
 
-**WAK-Lab e.V. - Hackerspace u. Techniktreff Eisenach**
+Endgültige Variante - TBD
+
+Variante 1: **WAK-Lab e.V. - (Hacker|Maker)space Eisenach** (*Schreibweise als reg. Ausdruck*)
+Variante 2: **WAK-Lab e.V. - Hackerspace u. Techniktreff Eisenach**
 
 Kontextabhängig ist auch die Nutzung von sog. Hashtags möglich und sinnvoll.
 
