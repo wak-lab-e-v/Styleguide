@@ -13,6 +13,7 @@ Um den Vereinszweck transparent darzustellen kann der Vereinsname wie folgt erwe
 Endgültige Variante - TBD
 
 Variante 1: **WAK-Lab e.V. - (Hacker|Maker)space Eisenach** (*Schreibweise als reg. Ausdruck*)
+
 Variante 2: **WAK-Lab e.V. - Hackerspace u. Techniktreff Eisenach**
 
 Kontextabhängig ist auch die Nutzung von sog. Hashtags möglich und sinnvoll.
