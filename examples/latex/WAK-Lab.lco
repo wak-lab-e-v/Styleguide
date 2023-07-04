@@ -1,0 +1,135 @@
+%%
+% Deutsche LaTeX Briefvorlage 
+%%
+\ProvidesFile{WAK-Lab.lco}[2010/07/08 letter class option]
+
+% Definiere Grundschrift: sans serif Latin Modern
+%\RequirePackage{lmodern}
+%\RequirePackage{mathpazo}
+\RequirePackage{mathptmx} % Hier steckt Times drin
+\RequirePackage[scaled]{helvet}
+\RequirePackage{courier}
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand*\familydefault{\ttdefault}
+
+\RequirePackage[ngerman]{babel}            % Deutsche Sprache
+\RequirePackage{fix-cm}
+\RequirePackage[T1]{fontenc}            % Ligaturschriften
+
+% Der Text in dieser Datei (absender.lco) ist UTF-8 enkodiert
+\RequirePackage[utf8x]{inputenc}
+\RequirePackage{fontspec}
+
+%\RequirePackage[ansinew]{inputenc}      % Eingabezeichensatz
+
+\RequirePackage{graphicx}               % Grafikpaket
+
+\RequirePackage{textcomp}             % Eurozeichen
+
+% Symbole: Handy, Telefon, E-Mail
+\RequirePackage{marvosym}
+
+% Falls Farben gewuenscht sind...
+\RequirePackage{color}
+
+\RequirePackage{hyperref}
+\hypersetup{pdfpagemode=None}
+
+\KOMAoptions{
+        paper=a4,
+        pagenumber=botcenter,
+        fromalign=right,
+        fromrule=afteraddress,
+        fromphone,
+%        frommobilephone=true,
+%       fromfax,
+        fromlogo,
+        fromurl,fromemail,
+        backaddress=true,
+        foldmarks,
+%        headsepline,
+        footsepline,
+        firstfoot=true,
+        enlargefirstpage
+}
+
+% Der Briefkopf kann z.B. mit `fromrule` (s. KOMAoptions) oder mit Farben
+% und mit speziellen Fonts angepasst werden (teilweise auskommentierte Bespiele
+% s.u.).
+
+%\setkomavar{firstfoot}{\hfill WAK-Lab e.V. \qquad%
+%    \usekomavar*{fromemail}\usekomavar{fromemail}\qquad%
+%    \usekomavar*{frommobilephone}\usekomavar{frommobilephone}\hfill\pagemark%
+%}
+
+\setkomavar{nextfoot}{\hfill WAK-Lab e.V. \qquad%
+    \usekomavar*{fromemail}\usekomavar{fromemail}\qquad%
+    \usekomavar*{frommobilephone}\usekomavar{frommobilephone}\hfill\pagemark%
+}
+
+% So kann man Farben definieren.
+%\definecolor{mygray}{gray}{.55}
+%\definecolor{myblue}{rgb}{0.25,0.45,0.75}
+
+% Absenderdaten:
+\setkomavar{fromname}{WAK-Lab e.V.}
+\setkomavar{fromaddress}{Nebestraße~24\\D-99817~Eisenach}
+%\setkomavar{frommobilephone}[\Mobilefone~]{+49\,(0)\,3691\,8548795}
+\setkomavar{fromphone}[\Telefon~]{+49\,(0)\,3691\,8548795}
+\setkomavar{fromfax}[\Faxmachine~]{+49\,(0)\,3691\,8548795}
+\setkomavar{fromemail}[\Letter~]{vorstand@wak-lab.org}
+%\setkomavar*{emailseparator}{mailto}
+%\setkomavar{emailseparator}{:}
+\setkomavar{fromurl}{\url{//www.wak-lab.org}}
+%\setkomavar*{urlseparator}{}
+%\setkomavar{urlseparator}{}
+\setkomavar{frombank}{IBAN: DE58 820* **** **** ***3 16}
+\setkomavar{place}{Eisenach}
+
+% LOGOs oder Ähnliches Oben Rechts
+%\setkomavar{fromlogo}{\parbox[b]{8cm}{\usekomafont{fromaddress}%
+%        {\mbox{\LARGE \bfseries WAK-Lab e.V.}}
+%        \smallskip}
+%}
+\setkomavar{fromlogo}{\parbox[b]{2cm}{\includegraphics[scale=.3]{logo.png}}}
+
+
+% Definiere Komaschrift: sans serif Latin Modern
+\setkomafont{backaddress}{\ttfamily}
+\setkomafont{fromaddress}{\ttfamily}
+%\setkomafont{backaddress}{\sffamily}
+%\setkomafont{fromaddress}{\sffamily}
+%\setkomafont{fromname}{\sffamily}
+%\addtokomafont{fromname}{\scriptsize}
+%\addtokomafont{fromaddress}{\scriptsize}
+\pagestyle{headings}
+
+% Geschäftszeile 
+
+\setkomavar{yourref}{011.G-962D677203}
+\setkomavar{yourmail}{27.5.2020}
+%\setkomavar{myref}{foo/bar}
+\newkomavar*[Kundennummer]{mtglnr}
+\setkomavar{mtglnr}{962D677203}
+\setkomavar{invoice}{07/12345}
+\setkomavar{date}{\today}
+%
+
+
+
+
+% Optisches:
+%\setkomafont{fromname}{\bfseries\color{black}\LARGE}
+%\setkomafont{fromrule}{\color{black}}
+%\setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{black}}
+% Oder in blau...
+%\setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{myblue}}
+%\setkomafont{addressee}{\small}
+
+
+%\setkomavar{signature}{WAK-Lab e.V.}
+%\renewcommand*{\raggedsignature}{\raggedright}
+
+% Definiere vertikalen Abstand vor der Unterschrift
+\@setplength{sigbeforevskip}{1.8cm}
+\endinput
